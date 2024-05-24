@@ -1,4 +1,4 @@
-const express = require("express");
+import express from "express";
 const router = express.Router();
 import CollaboratorController from "../controllers/CollaboratorController";
 export default function CollaboratorRoute(app) {

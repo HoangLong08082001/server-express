@@ -1,11 +1,11 @@
-const { setTimeout, setInterval } = require("timers");
-const request = require("request");
-const axios = require("axios");
-const WebSocket = require("ws");
-const { response } = require("express");
+import { setTimeout, setInterval } from "timers";
+import request from "request";
+import axios from "axios";
+import WebSocket from "ws";
+import { response } from "express";
 import pool from "../config/database";
 import WebhookModal from "../models/WebhookModal";
-const dotenv = require("dotenv");
+import dotenv from "dotenv";
 dotenv.config();
 
 //Orders

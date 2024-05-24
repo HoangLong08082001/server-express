@@ -1,14 +1,14 @@
-const express = require("express");
-const dotenv = require("dotenv");
-const bodyParser = require("body-parser");
-const cors = require("cors");
-const http = require("http");
+import express from "express";
+import dotenv from "dotenv";
+import bodyParser from "body-parser";
+import cors from "cors";
+import http from "http";
 import CollaboratorRoute from "./src/routes/CollaboratorRoute";
 import TeamRoutes from "./src/routes/TeamRoutes";
 import "./src/config/database";
 import WebhookRoute from "./src/routes/WebhookRoute";
 
-const socketIO = require("socket.io");
+import socketIO from "socket.io";
 const io = socketIO();
 dotenv.config();
 const app = express();

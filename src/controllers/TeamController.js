@@ -1,5 +1,5 @@
-const pool = require("../config/database");
-const { TeamModal } = require("../models/TeanModal");
+import pool from "../config/database";
+import { TeamModal } from "../models/TeanModal";
 
 const createTeam = (req, res) => {
   try {

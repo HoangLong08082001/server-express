@@ -1,4 +1,4 @@
-const express = require("express");
+import express from "express";
 const router = express.Router();
 import TeamController from "../controllers/TeamController";
 export default function TeamRoutes(app) {
