@@ -3,10 +3,10 @@ const dotenv = require("dotenv");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const http = require("http");
-import CollaboratorRoute from "./API/Collaborator/CollaboratorRoute";
-import TeamRoutes from "./API/Team/TeamRoutes";
-import "./config/database";
-import WebhookRoute from "./WEBHOOK/WebhookRoute";
+import CollaboratorRoute from "./src/routes/CollaboratorRoute";
+import TeamRoutes from "./src/routes/TeamRoutes";
+import "./src/config/database";
+import WebhookRoute from "./src/routes/WebhookRoute";
 
 const socketIO = require("socket.io");
 const io = socketIO();
